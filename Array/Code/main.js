@@ -5,6 +5,7 @@ const VALORI = 20;
 //Vettori
 let v1 = [];
 let v2 = [];
+let v3 = [];
 
 //Aggiunge VALORI numeri random ai vettori
 function addRandom() {
@@ -38,7 +39,12 @@ function ordinaBubble(array) {
 //Funzione fusione array
 function fusionArray() {
     let i = 0;
-    while()
+    let lFinale = (v1.length + v2.length) - 2;
+    while(lFinale > 0) {
+        for (let i = 0; i < lFinale; i++) {
+            if()
+        }
+    }
 }
 
 //Funzione che inizializza il codice
