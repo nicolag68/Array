@@ -18,22 +18,27 @@ function addRandom() {
 function stampaArray() {
     document.getElementById("v1").innerText = v1;
     document.getElementById("v2").innerText = v2;
-    document.
 }
 
 //Funzione BubbleSort
 function ordinaBubble(array) {
-    let nigegr = array.length;
+    let nigegr = array.length -1;
     while(nigegr > 0) {
-        for (let i = 0; i < nigegr - 1; i++) {
+        for (let i = 0; i < nigegr; i++) {
             if (array[i] > array[i + 1]) {
                 let temp = array[i];
                 array[i] = array[i + 1];
-                array[i] = temp;
+                array[i + 1] = temp;
             }
         }
         nigegr--;
     }
+}
+
+//Funzione fusione array
+function fusionArray() {
+    let i = 0;
+    while()
 }
 
 //Funzione che inizializza il codice
@@ -42,5 +47,6 @@ function init() {
     stampaArray();
     ordinaBubble(v1);
     ordinaBubble(v2);
+    fusionArray();
 }
 window.addEventListener('DOMContentLoaded', init);
