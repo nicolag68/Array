@@ -10,7 +10,7 @@ let v3 = [];
 //Aggiunge VALORI numeri random ai vettori
 function addRandom() {
     for (let i = 0; i < VALORI; i++) {
-        v1.push(Math.floor(Math.random() * NUM_MAX + 1));
+        v2.push(Math.floor(Math.random() * NUM_MAX + 1));
         v2.push(Math.floor(Math.random() * NUM_MAX + 1));
     }
 }
@@ -48,9 +48,8 @@ function fusionArray() {
 //Funzione che inizializza il codice
 function init() {
     addRandom();
-    stampaArray();
     ordinaBubble(v1);
     ordinaBubble(v2);
-    fusionArray();
+    stampaArray();
 }
 window.addEventListener('DOMContentLoaded', init);
