@@ -26,17 +26,18 @@ function stampaArray() {
 
 //Funzione BubbleSort
 function ordinaBubble(array) {
-    let lung = array.length -1;
-    while(lung > 0) {
-        for (let i = 0; i < lung; i++) {
+    let scambio = false;
+    do {
+        scambio = false;
+        for (let i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i + 1]) {
                 let temp = array[i];
                 array[i] = array[i + 1];
                 array[i + 1] = temp;
+                scambio = true;
             }
         }
-        lung--;
-    }
+    } while (scambio);
 }
 
 //Funzione fusione array
